@@ -14,6 +14,12 @@
 module.exports = function(grunt) {
   grunt.config.set('uglify', {
     default: {
+      options: {
+        mangle: {
+          except: ['jQuery']
+        },
+        preserveComments: 'some'
+      },
       files: {
         './dist/javascripts/libs.min.js': ['./dist/javascripts/libs.js'],
         './dist/javascripts/main.min.js': ['./dist/javascripts/main.js']
