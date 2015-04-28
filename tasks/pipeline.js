@@ -15,7 +15,7 @@
  */
 
 var cssFilesToInject = [
-  'assets/**/*.css'
+  'stylesheets/**/*.css'
 ];
 
 
@@ -48,8 +48,8 @@ var jsFilesToInject = [
  */
 
 module.exports.cssFilesToInject = cssFilesToInject.map(function(path) {
-  return '.tmp/public/' + path;
+  return 'dist/' + path;
 });
 module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
-  return '.tmp/public/' + path;
+  return 'dist/' + path;
 });

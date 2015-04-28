@@ -32,7 +32,7 @@ module.exports = function(grunt) {
   function loadTasks(relPath) {
     return includeAll({
       dirname: require('path').resolve(__dirname, relPath),
-      filter: / (.+)\.js$/
+      filter: /(.+)\.js$/
     }) || {};
   }
 
@@ -51,8 +51,9 @@ module.exports = function(grunt) {
   /**
    * Load task functions
    */
-  var taskConfigurations = loadTasks('./static/tasks/config'),
-      registerDefinitions = loadTasks('./static/tasks/register');
+  var taskConfigurations = loadTasks('./tasks/config/'),
+      registerDefinitions = loadTasks('./tasks/register/');
+
 
   // (ensure that a default task exists)
   if(!registerDefinitions.default) {

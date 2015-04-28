@@ -14,5 +14,11 @@
     "url": "git://github.com/if/testProject.git"
   },
   "author": "Ingo Fahrentholz",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-sails-linker": "^0.10.1"
+  }
 }
