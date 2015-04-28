@@ -51,5 +51,5 @@ module.exports.cssFilesToInject = cssFilesToInject.map(function(path) {
   return 'dist/' + path;
 });
 module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
-  return 'dist/' + path;
+  return 'assets/' + path;
 });

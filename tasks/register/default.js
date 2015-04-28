@@ -1,8 +1,11 @@
 module.exports = function(grunt) {
   grunt.registerTask('default', [
+    'clean',
+    'compass:prod',
     'concat',
     'uglify',
     'syncAssets',
-    'linkAssets'
+    'linkAssetsProd',
+    'notify'
   ]);
 };
