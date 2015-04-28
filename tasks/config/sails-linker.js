@@ -41,6 +41,33 @@ module.exports = function(grunt) {
       }
     },
 
+    prodJs: {
+      options: {
+        startTag: '<!--SCRIPTS-->',
+        endTag: '<!--SCRIPTS END-->',
+        fileTmpl: '<script src="/static/%s"></script>',
+        appRoot: ''
+      },
+
+      files: {
+        '../templates/**/*.html': ['./dist/libs.min.js', './dist/main.min.js']
+      }
+    },
+
+    prodJsRelative: {
+      options: {
+        startTag: '<!--SCRIPTS-->',
+        endTag: '<!--SCRIPTS END-->',
+        fileTmpl: '<script src="/static/%s"></script>',
+        appRoot: '',
+        relative: true
+      },
+
+      files: {
+        '../templates/**/*.html': ['./dist/javascripts/libs.min.js', './dist/javascripts/main.min.js']
+      }
+    },
+
     devStyles: {
       options: {
         startTag: '<!--STYLES-->',
@@ -53,6 +80,20 @@ module.exports = function(grunt) {
         '../templates/**/*.html': require('../pipeline').cssFilesToInject
       }
     },
+
+    prodStyles: {
+      options: {
+        startTag: '<!--STYLES-->',
+        endTag: '<!--STYLES END-->',
+        fileTmpl: '<link rel="stylesheet" href="/static/%s">',
+        appRoot: ''
+      },
+
+      files: {
+        '../templates/**/*.html': ['./dist/stylesheets/main.css']
+      }
+    },
+
     devStylesRelative: {
       options: {
         startTag: '<!--STYLES-->',
@@ -65,7 +106,21 @@ module.exports = function(grunt) {
       files: {
         '../templates/**/*.html': require('../pipeline').cssFilesToInject
       }
-    }
+    },
+
+    prodStylesRelative: {
+      options: {
+        startTag: '<!--STYLES-->',
+        endTag: '<!--STYLES END-->',
+        fileTmpl: '<link rel="stylesheet" href="/static/%s">',
+        appRoot: '',
+        relative: true
+      },
+
+      files: {
+        '../templates/**/*.html': ['./dist/stylesheets/main.css']
+      }
+    },
   });
 
   grunt.loadNpmTasks('grunt-sails-linker');
