@@ -21,8 +21,8 @@ module.exports = function (grunt) {
   grunt.config.set('compass', {
     dev: {
       options: {
-        sassDir: './assets/stylesheets',
-        cssDir: './dist/stylesheets',
+        sassDir: 'src/stylesheets',
+        cssDir: 'dist/stylesheets',
         environment: 'development',
         outputStyle: 'expanded',
         sourcemap: false
@@ -31,8 +31,8 @@ module.exports = function (grunt) {
 
     prod: {
       options: {
-        sassDir: './assets/stylesheets',
-        cssDir: './dist/stylesheets',
+        sassDir: 'src/stylesheets',
+        cssDir: 'dist/stylesheets',
         environment: 'production',
         outputStyle: 'compressed',
         sourcemap: false

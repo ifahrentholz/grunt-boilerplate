@@ -16,7 +16,7 @@ module.exports = function(grunt) {
   grunt.config.set('sync', {
     default: {
       files: [{
-        cwd: './assets',
+        cwd: 'src',
         src: ['fonts/**', 'images/**', '!**/*.coffee', '!**/*.scss', '!**/javascripts/'],
         dest: 'dist'
       }]
