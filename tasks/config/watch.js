@@ -14,14 +14,14 @@
 module.exports = function(grunt) {
   grunt.config.set('watch', {
     dev: {
-      files: ['./assets/javascripts/**/*.js', './assets/stylesheets/**/*.scss'],
+      files: ['assets/javascripts/**/*.js', 'assets/stylesheets/**/*.scss'],
       tasks: ['dev'],
       options: {
         spawn: false
       }
     },
     prod: {
-      files: ['./assets/javascripts/**/*.js', './assets/stylesheets/**/*.scss'],
+      files: ['assets/javascripts/**/*.js', 'assets/stylesheets/**/*.scss'],
       tasks: ['default'],
       options: {
         spawn: false

@@ -8,7 +8,6 @@
  * for matching multiple files.)
  */
 
-
 /**
  * CSS files to inject in order
  * (if you're using LESS with the built-in default config, you'll want  to change `assets/styles/importer.less` instead.)
@@ -25,10 +24,10 @@ var cssFilesToInject = [
  */
 
 var jsFilesToInject = [
-  // Load sails.io before everything else
+  // Load jQuery before everything else
   'javascripts/dependencies/jquery/jquery-1.11.2.js',
 
-  // Dependencies like jQuery, or Angular are brought in here
+  // Dependencies like jQuery-UI, or Angular are brought in here
   'javascripts/dependencies/**/*.js',
 
   // Vendor scripts like bxSlider, or fancybox are brought in
@@ -38,6 +37,9 @@ var jsFilesToInject = [
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
   'javascripts/bundle/*.js'
+  
+  // Document Ready Starter
+  'javascripts/main.js'
 ];
 
 

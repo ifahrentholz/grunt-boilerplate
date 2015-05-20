@@ -18,8 +18,7 @@ module.exports = function(grunt) {
       options: {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
-        fileTmpl: '<script src="/static/%s"></script>',
-        appRoot: ''
+        fileTmpl: '<script type="text/javascript" src="/static/%s"></script>'
       },
 
       files: {
@@ -31,8 +30,7 @@ module.exports = function(grunt) {
       options: {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
-        fileTmpl: '<script src="/static/%s"></script>',
-        appRoot: '',
+        fileTmpl: '<script type="text/javascript" src="/static/%s"></script>',
         relative: true
       },
 
@@ -45,8 +43,7 @@ module.exports = function(grunt) {
       options: {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
-        fileTmpl: '<script src="/static/%s"></script>',
-        appRoot: ''
+        fileTmpl: '<script type="text/javascript" src="/static/%s"></script>'
       },
 
       files: {
@@ -58,13 +55,12 @@ module.exports = function(grunt) {
       options: {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
-        fileTmpl: '<script src="/static/%s"></script>',
-        appRoot: '',
+        fileTmpl: '<script type="text/javascript" src="/static/%s"></script>',
         relative: true
       },
 
       files: {
-        '../templates/**/*.html': ['./dist/javascripts/libs.min.js', './dist/javascripts/main.min.js']
+        '../templates/**/*.html': ['dist/javascripts/libs.min.js', 'dist/javascripts/main.min.js']
       }
     },
 
@@ -72,8 +68,7 @@ module.exports = function(grunt) {
       options: {
         startTag: '<!--STYLES-->',
         endTag: '<!--STYLES END-->',
-        fileTmpl: '<link rel="stylesheet" href="/static/%s">',
-        appRoot: ''
+        fileTmpl: '<link rel="stylesheet" href="/static/%s">'
       },
 
       files: {
@@ -85,12 +80,11 @@ module.exports = function(grunt) {
       options: {
         startTag: '<!--STYLES-->',
         endTag: '<!--STYLES END-->',
-        fileTmpl: '<link rel="stylesheet" href="/static/%s">',
-        appRoot: ''
+        fileTmpl: '<link rel="stylesheet" href="/static/%s">'
       },
 
       files: {
-        '../templates/**/*.html': ['./dist/stylesheets/main.css']
+        '../templates/**/*.html': ['dist/stylesheets/main.css']
       }
     },
 
@@ -99,7 +93,6 @@ module.exports = function(grunt) {
         startTag: '<!--STYLES-->',
         endTag: '<!--STYLES END-->',
         fileTmpl: '<link rel="stylesheet" href="/static/%s">',
-        appRoot: '',
         relative: true
       },
 
@@ -113,12 +106,11 @@ module.exports = function(grunt) {
         startTag: '<!--STYLES-->',
         endTag: '<!--STYLES END-->',
         fileTmpl: '<link rel="stylesheet" href="/static/%s">',
-        appRoot: '',
         relative: true
       },
 
       files: {
-        '../templates/**/*.html': ['./dist/stylesheets/main.css']
+        '../templates/**/*.html': ['dist/stylesheets/main.css']
       }
     },
   });

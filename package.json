@@ -23,5 +23,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-notify": "^0.4.1",
     "grunt-sails-linker": "^0.10.1"
+  },
+  "engines": {
+    "node": ">=0.12.1"
   }
 }

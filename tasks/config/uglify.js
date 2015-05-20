@@ -21,8 +21,8 @@ module.exports = function(grunt) {
         preserveComments: 'some'
       },
       files: {
-        './dist/javascripts/libs.min.js': ['./dist/javascripts/libs.js'],
-        './dist/javascripts/main.min.js': ['./dist/javascripts/main.js']
+        'dist/javascripts/libs.min.js': ['dist/javascripts/libs.js'],
+        'dist/javascripts/main.min.js': ['dist/javascripts/main.js']
       }
     }
   });

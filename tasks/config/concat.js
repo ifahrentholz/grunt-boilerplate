@@ -18,17 +18,17 @@ module.exports = function(grunt) {
 
     libs: {
       src: [
-        './assets/javascripts/dependencies/**/*.*',
-        './assets/javascripts/vendor/**/*.*'
+        'src/javascripts/dependencies/**/*.*',
+        'src/javascripts/vendor/**/*.*'
       ],
-      dest: './dist/javascripts/libs.js'
+      dest: 'dist/javascripts/libs.js'
     },
 
     bundle: {
       src: [
-        './assets/javascripts/bundle/**/*.*'
+        'src/javascripts/bundle/**/*.*'
       ],
-      dest: './dist/javascripts/main.js'
+      dest: 'dist/javascripts/main.js'
     }
   });
 
