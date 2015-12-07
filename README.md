@@ -9,5 +9,5 @@ Boilerplate setup for frontend projects using gruntJS
 *TODO:*
 - ~~update dependencies~~
 - write docu for installation
-- write a cli generator
+- ~~write a cli generator~~
 
