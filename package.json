@@ -22,7 +22,9 @@
   },
   "author": "Ingo Fahrentholz",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-lips": "^4.0.0"
+  },
   "engines": {
     "node": ">=5.1.0"
   }
